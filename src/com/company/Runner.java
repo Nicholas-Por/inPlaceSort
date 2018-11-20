@@ -6,7 +6,7 @@ public class Runner {
         long time = System.currentTimeMillis();
         int[] arr = inPlaceSorts.randIntArr(50000);
         System.out.println(Arrays.toString(arr) + "\n Processing...");
-        inPlaceSorts.insertionSort(arr);
+        inPlaceSorts.InsertionSort(arr);
         System.out.println(Arrays.toString(arr) + "\n Done");
         time = System.currentTimeMillis() - time;
         System.out.println("Time taken: " + time * 0.001 + " seconds");

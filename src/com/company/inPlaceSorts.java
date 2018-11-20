@@ -23,7 +23,7 @@ public class inPlaceSorts
     }
 
 
-        public static void SelectionSort(int[] list1)
+        public static void SelectionSort(double[] list1)
         {
             //Loops through unsorted array
             for(int i = 0; i < list1.length - 1; i++)
@@ -41,17 +41,17 @@ public class inPlaceSorts
                 //Swaps the two indexes, unless it is at the same position
                 if(min != i)
                 {
-                    swap(list1, i, min);
+                    swapDouble(list1, i, min);
                 }
 
             }
         }
-        public static void swap(int[] list1, int i, int min)
-        {
-            int temp = i;
-            list1[i] = min;
-            min = temp;
-        }
+         public static void swapDouble(double[] arr, int i, int j)
+         {
+           double temp = arr[i];
+           arr[i] = arr[j];
+           arr[j] = temp;
+         }
 
 
             public static void InsertionSort(int[] list1) {
